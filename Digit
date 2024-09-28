@@ -1,20 +1,17 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-    int a, b = 0;
-    cin >> a;
-
-    while (true) {
-        if (a != 0) {  
-            a = a / 10;  
-            b++; 
-        }
-        else {
-            break;
+    string str;
+    cin >> str;
+    for (int i = 0; i < str.length(); i++) {
+        if (str[i] == '0') {
+            str[i] = '1';
         }
     }
+    int length = str.length();
+    cout << length << endl;
 
-    cout << b << endl; 
     return 0;
 }
