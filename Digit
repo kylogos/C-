@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b = 0;
+    cin >> a;
+
+    while (true) {
+        if (a != 0) {  
+            a = a / 10;  
+            b++; 
+        }
+        else {
+            break;
+        }
+    }
+
+    cout << b << endl; 
+    return 0;
+}
